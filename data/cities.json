@@ -1,0 +1,317 @@
+{
+  "cities": [
+    {
+      "cityName": "El Assafia",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "33.88865750124075",
+        "lng": "3.043212890625"
+      },
+      "id": "9seoQ1PFKm8"
+    },
+    {
+      "cityName": "Charef",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "34.56085936708384",
+        "lng": "2.7685546875000004"
+      },
+      "id": "mR-eDztDYiw"
+    },
+    {
+      "cityName": "Mliliha",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "34.72355492704221",
+        "lng": "3.6254882812500004"
+      },
+      "id": "-vcjqAm4xmI"
+    },
+    {
+      "cityName": "El Atteuf",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "32.44488496716713",
+        "lng": "3.8232421875000004"
+      },
+      "id": "--8FwenrU_8"
+    },
+    {
+      "cityName": "Abdelkader Azil",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.18278813800229",
+        "lng": "4.7900390625"
+      },
+      "id": "EnIQ_f7l2qk"
+    },
+    {
+      "cityName": "Benhar",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.43381992014202",
+        "lng": "3.175048828125"
+      },
+      "id": "o5FWoKZXJao"
+    },
+    {
+      "cityName": "Hassi Fedoul",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.45172093634465",
+        "lng": "2.3620605468750004"
+      },
+      "id": "5RMibhFnTQc"
+    },
+    {
+      "cityName": "El Hassasna",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "34.84085858477277",
+        "lng": "0.28564453125000006"
+      },
+      "id": "HpaZhDkoUhg"
+    },
+    {
+      "cityName": "El Bordj",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.47856499535729",
+        "lng": "0.30761718750000006"
+      },
+      "id": "gyq8lWDaHIY"
+    },
+    {
+      "cityName": "Tilmouni",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.21869749632885",
+        "lng": "-0.48339843750000006"
+      },
+      "id": "SyQkmzsgn_s"
+    },
+    {
+      "cityName": "Ouled Mimoun",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "34.89944783005726",
+        "lng": "-1.0821533203125002"
+      },
+      "id": "GHtbgJR2Sm4"
+    },
+    {
+      "cityName": "Maghnia",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "34.79125047210742",
+        "lng": "-1.8347167968750002"
+      },
+      "id": "IaLV7kg67ic"
+    },
+    {
+      "cityName": "Marsa Ben Mehidi",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.03449433167976",
+        "lng": "-2.1533203125000004"
+      },
+      "id": "0L4wo_AYfGY"
+    },
+    {
+      "cityName": "Hammam Bou Hadjar",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.31288398967159",
+        "lng": "-0.9503173828125001"
+      },
+      "id": "iBrbOpnT80I"
+    },
+    {
+      "cityName": "Sidi ech Chahmi",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.69299463209881",
+        "lng": "-0.5328369140625001"
+      },
+      "id": "-Zo-DOoLGWY"
+    },
+    {
+      "cityName": "Kheir Eddine",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.991340960635405",
+        "lng": "0.19226074218750003"
+      },
+      "id": "x3dFXD1J_Og"
+    },
+    {
+      "cityName": "Tenes",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.49638952000399",
+        "lng": "1.34033203125"
+      },
+      "id": "l3G4jhd8aLE"
+    },
+    {
+      "cityName": "Algiers",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.72347538145935",
+        "lng": "3.07891845703125"
+      },
+      "id": "MdWrO25RgmU"
+    },
+    {
+      "cityName": "Freha",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.74768773190056",
+        "lng": "4.284667968750001"
+      },
+      "id": "lGTOc9-Xmgc"
+    },
+    {
+      "cityName": "Beni Ilmene",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.96911507577482",
+        "lng": "4.086914062500001"
+      },
+      "id": "PLufYciy8Dc"
+    },
+    {
+      "cityName": "Ain Arnat",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.12900165569652",
+        "lng": "5.191040039062501"
+      },
+      "id": "xD0R5LGbR40"
+    },
+    {
+      "cityName": "Bejaia",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.72567681977065",
+        "lng": "5.059204101562501"
+      },
+      "id": "pDpudAcmr00"
+    },
+    {
+      "cityName": "Taher",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.79169061907076",
+        "lng": "5.877685546875001"
+      },
+      "id": "ZmHTuXcdTAo"
+    },
+    {
+      "cityName": "El Khroub",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.34167804918315",
+        "lng": "6.701660156250001"
+      },
+      "id": "kt9dBQP5fdk"
+    },
+    {
+      "cityName": "El Bouni",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "36.870832155646326",
+        "lng": "7.712402343750001"
+      },
+      "id": "-s_OXynfoDI"
+    },
+    {
+      "cityName": "El Kouif",
+      "country": "Algeria",
+      "emoji": "🇩🇿",
+      "date": "2026-04-14T20:15:31.316Z",
+      "notes": "",
+      "position": {
+        "lat": "35.460669951495305",
+        "lng": "8.294677734375002"
+      },
+      "id": "bQk5Ys53wyI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
