@@ -1,21 +1,30 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
-import {
-  useState,
-  createContext,
-  useEffect,
-  useContext,
-  useReducer,
-} from "react";
+import { createContext, useEffect, useContext, useReducer } from "react";
+import citiesData from "../../data/cities.json";
 
-const CitiesContex = createContext();
-const BASE_URL = "http://localhost:8000";
+const CitiesContext = createContext();
+const STORAGE_KEY = "world_wize_cities";
 const initialState = {
   cities: [],
-  isLoadong: false,
+  isLoading: false,
   error: "",
   curentCity: {},
 };
+
+function loadCitiesFromStorage() {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (!stored) return null;
+  try {
+    return JSON.parse(stored);
+  } catch {
+    return null;
+  }
+}
+
+function saveCitiesToStorage(cities) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(cities));
+}
 
 function reducer(state, action) {
   switch (action.type) {
@@ -54,59 +63,46 @@ function CitiesProvider({ children }) {
     reducer,
     initialState,
   );
-  useEffect(
-    function () {
-      async function fetchCities() {
-        dispatch({ type: "loading" });
-        try {
-          const res = await fetch(`${BASE_URL}/cities`);
-          const data = await res.json();
-          dispatch({ type: "cities/loaded", payload: data });
-        } catch {
-          dispatch({ type: "error", payload: "error while loding cities" });
-        }
-      }
-      fetchCities();
-    },
-    [dispatch],
-  );
+  useEffect(function () {
+    dispatch({ type: "loading" });
+    const storedCities = loadCitiesFromStorage();
+    const initialCities = storedCities ?? citiesData.cities ?? [];
+    saveCitiesToStorage(initialCities);
+    dispatch({ type: "cities/loaded", payload: initialCities });
+  }, []);
   async function getCity(id) {
     dispatch({ type: "loading" });
     try {
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
-      const data = await res.json();
+      const storedCities = loadCitiesFromStorage() ?? cities;
+      const data = storedCities.find((city) => city.id === id);
+      if (!data) throw new Error("City not found");
       dispatch({ type: "city/loaded", payload: data });
     } catch {
-      dispatch({ type: "error", payload: "error while loding cities" });
+      dispatch({ type: "rejected", payload: "error while loading city" });
     }
   }
   async function creatCity(newCity) {
     dispatch({ type: "loading" });
     try {
-      const res = await fetch(`${BASE_URL}/cities`, {
-        method: "POST",
-        body: JSON.stringify(newCity),
-        headers: { "Content-Type": "application/json" },
-      });
-      const data = await res.json();
-      dispatch({ type: "city/created", payload: data });
+      const newCities = [...cities, newCity];
+      saveCitiesToStorage(newCities);
+      dispatch({ type: "city/created", payload: newCity });
     } catch {
-      dispatch({ type: "error", payload: "error while loding cities" });
+      dispatch({ type: "rejected", payload: "error while loading cities" });
     }
   }
   async function deletCity(id) {
     dispatch({ type: "loading" });
     try {
-      await fetch(`${BASE_URL}/cities/${id}`, {
-        method: "DELETE",
-      });
+      const newCities = cities.filter((city) => city.id !== id);
+      saveCitiesToStorage(newCities);
       dispatch({ type: "city/deleted", payload: id });
     } catch {
-      dispatch({ type: "error", payload: "error while loding cities" });
+      dispatch({ type: "rejected", payload: "error while loading cities" });
     }
   }
   return (
-    <CitiesContex.Provider
+    <CitiesContext.Provider
       value={{
         cities,
         curentCity,
@@ -117,12 +113,12 @@ function CitiesProvider({ children }) {
       }}
     >
       {children}
-    </CitiesContex.Provider>
+    </CitiesContext.Provider>
   );
 }
 
 function useCities() {
-  const context = useContext(CitiesContex);
+  const context = useContext(CitiesContext);
   if (context === undefined)
     throw new Error("CitiesContext was used outside the CitiesProvider");
   return context;
